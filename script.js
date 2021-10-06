@@ -1,5 +1,3 @@
-
-
 function compute()
 {
     p = document.getElementById("principal").value;
@@ -30,4 +28,13 @@ function updateRate() {
         
 }   
 
+function validP() {
+
+    var ppal = document.getElementById("principal").value;
+
+    if (ppal == null || ppal == "0") {
+        alert("Please enter a positive Amount!");
+    } 
+
+} 
         
