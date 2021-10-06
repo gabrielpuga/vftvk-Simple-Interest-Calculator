@@ -17,7 +17,7 @@ function compute()
     var res1 = "If you deposit " + principal + ",<br />";
     var res2 = "at an interest rate of " + rate + "%. <br />";
     var res3 = "You will receive an amount of " + interest + ",<br />";
-    var res4 = "In the year " + year + "<br />";
+    var res4 = "In the year " + year + "<br /><br />";
     
     document.getElementById("result").innerHTML = res1 + res2 + res3 + res4;
 }
