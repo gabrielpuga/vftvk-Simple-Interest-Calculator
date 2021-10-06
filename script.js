@@ -19,7 +19,7 @@ function compute()
     var res5 = res1 + res2 + res3 + res4;
 
     if (principal == "" || principal == 0) {
-        res5 = ""
+        var res5 = ""
         alert("Please enter a positive Amount!");
     } 
 
