@@ -10,16 +10,20 @@ function compute()
 
     var year = new Date().getFullYear() + parseInt(years);
 
-    if (principal == "" || principal == 0) {
-        alert("Please enter a positive Amount!");
-    } 
+   
 
     var res1 = "If you deposit " + principal + ",<br />";
     var res2 = "at an interest rate of " + rate + "%. <br />";
     var res3 = "You will receive an amount of " + interest + ",<br />";
     var res4 = "In the year " + year + "<br /><br />";
-    
-    document.getElementById("result").innerHTML = res1 + res2 + res3 + res4;
+    var res5 = res1 + res2 + res3 + res4;
+
+    if (principal == "" || principal == 0) {
+        alert("Please enter a positive Amount!");
+        res5 = ""
+    } 
+
+    document.getElementById("result").innerHTML = res5;
 }
 
 function updateRate() {
