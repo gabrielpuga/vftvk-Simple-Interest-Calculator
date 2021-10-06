@@ -18,7 +18,7 @@ function compute()
     var res4 = "In the year " + year + "<br /><br />";
     var res5 = res1 + res2 + res3 + res4;
 
-    if (principal == "" || principal <= 0) {
+    if (principal == "" || parseInt(principal) <= 0) {
         var res5 = ""
         alert("Please enter a positive Amount!");
     } 
