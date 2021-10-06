@@ -10,6 +10,10 @@ function compute()
 
     var year = new Date().getFullYear() + parseInt(years);
 
+    if (principal == "" || principal == 0) {
+        alert("Please enter a positive Amount!");
+    } 
+
     var res1 = "If you deposit " + principal + ",<br />";
     var res2 = "at an interest rate of " + rate + "%. <br />";
     var res3 = "You will receive an amount of " + interest + ",<br />";
@@ -26,13 +30,4 @@ function updateRate() {
         
 }   
 
-function validP() {
-
-    var ppal = document.getElementById("principal").value;
-
-    if (ppal == "" || ppal == 0) {
-        alert("Please enter a positive Amount!");
-    } 
-
-} 
         
